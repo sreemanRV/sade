@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add this CSS to your file (e.g., App.css or a dedicated CSS file) */
+.carousel-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+  width: 100%;
+  color: white;
+}
+
+/* Center the header text in the PrimeReact DataTable */
+.p-datatable .p-column-header-content {
+  text-align: center !important;
+  display: flex; 
+  justify-content: center; 
+}
+
+.carousel-item img {
+  width: 50%; /* Set image width to 50% */
+  height: auto;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  color: white;
+  border-width: 1px;
+  border-color: white;
+  cursor: pointer;
+  border-radius: 100%;
+  z-index: 10;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
